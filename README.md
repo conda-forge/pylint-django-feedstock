@@ -11,6 +11,18 @@ Summary: pylint-django is a Pylint plugin to aid Pylint in recognising and under
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pylint-django-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pylint-django-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/pylint-django-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pylint-django-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pylint-django-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pylint-django-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pylint-django/badges/version.svg)](https://anaconda.org/conda-forge/pylint-django)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pylint-django/badges/downloads.svg)](https://anaconda.org/conda-forge/pylint-django)
+
 Installing pylint-django
 ========================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `pylint-django` available on your 
 ```
 conda search pylint-django --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pylint-django-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pylint-django-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/pylint-django-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pylint-django-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pylint-django-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pylint-django-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pylint-django/badges/version.svg)](https://anaconda.org/conda-forge/pylint-django)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pylint-django/badges/downloads.svg)](https://anaconda.org/conda-forge/pylint-django)
 
 
 Updating pylint-django-feedstock
