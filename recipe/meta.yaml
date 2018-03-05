@@ -37,6 +37,7 @@ test:
 about:
   home: https://github.com/landscapeio/pylint-django
   license: GPL 2
+  license_file: LICENSE
   summary: pylint-django is a Pylint plugin to aid Pylint in recognising and understandingerrors caused when using the Django framework
 
 extra:
