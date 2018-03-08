@@ -13,6 +13,7 @@ source:
 
 build:
   number: 0
+  skip: true  # [py2k]
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
@@ -22,8 +23,9 @@ requirements:
 
   run:
     - python
+    - django
     - pylint-plugin-utils >=0.2.1
-    - pylint >=1.0
+    - pylint >=1.8.2
 
 test:
   imports:
@@ -35,7 +37,8 @@ test:
 about:
   home: https://github.com/landscapeio/pylint-django
   license: GPL 2
-  summary: pylint-django is a Pylint plugin to aid Pylint in recognising and understandingerrors caused when using the Django framework
+  license_file: LICENSE
+  summary: A Pylint plugin to help Pylint understand the Django web framework
 
 extra:
   recipe-maintainers:

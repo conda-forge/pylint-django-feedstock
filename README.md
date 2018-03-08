@@ -7,7 +7,7 @@ Package license: GPL 2
 
 Feedstock license: BSD 3-Clause
 
-Summary: pylint-django is a Pylint plugin to aid Pylint in recognising and understandingerrors caused when using the Django framework
+Summary: A Pylint plugin to help Pylint understand the Django web framework
 
 
 
