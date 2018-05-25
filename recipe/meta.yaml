@@ -12,17 +12,17 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
-  skip: true  # [py2k]
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  number: 1
+  noarch: python
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
-    - python
-    - setuptools
+    - python >=3.5
+    - pip
 
   run:
-    - python
+    - python >=3.5
     - django
     - pylint-plugin-utils >=0.2.1
     - pylint >=1.8.2
@@ -35,7 +35,7 @@ test:
     - pylint_django.transforms
 
 about:
-  home: https://github.com/landscapeio/pylint-django
+  home: https://github.com/PyCQA/pylint-django
   license: GPL 2
   license_file: LICENSE
   summary: A Pylint plugin to help Pylint understand the Django web framework
