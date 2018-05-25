@@ -1,7 +1,7 @@
 About pylint-django
 ===================
 
-Home: https://github.com/landscapeio/pylint-django
+Home: https://github.com/PyCQA/pylint-django
 
 Package license: GPL 2
 
