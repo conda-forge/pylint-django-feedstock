@@ -1,6 +1,6 @@
 {% set name = "pylint-django" %}
-{% set version = "0.11.1" %}
-{% set sha256 = "ff10fbf6e0ab207fbb8ec26f5b6a3f4fa604233b38182ccda038a08ba1b8ba80" %}
+{% set version = "2.0.1" %}
+{% set sha256 = "10dc93b443b77f549f2fe605a01f7ce9ff1a1fe9340e63a37c7b34f5b7ed530f" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: python -m pip install --no-deps --ignore-installed .
 
