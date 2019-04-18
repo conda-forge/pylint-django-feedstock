@@ -1,6 +1,6 @@
 {% set name = "pylint-django" %}
-{% set version = "2.0.6" %}
-{% set sha256 = "e313047ca5c2ce0abd17da75ce8c97227cb3411c1d449ade948a485d6dc4bfdd" %}
+{% set version = "2.0.8" %}
+{% set sha256 = "befb69b47843ffd8a0af7b0f7555d819f5b2dab425b4f07ed229cc2dbf01ad94" %}
 
 package:
   name: {{ name|lower }}
