@@ -20,7 +20,7 @@ requirements:
     - python >=3.6
   run:
     - django
-    - pylint >=2.0
+    - pylint >=2.0,<2.4
     - pylint-plugin-utils >=0.5
     - python >=3.6
 
