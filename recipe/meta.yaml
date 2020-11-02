@@ -1,31 +1,28 @@
 {% set name = "pylint-django" %}
-{% set version = "2.0.11" %}
-{% set sha256 = "6740b60dd94b6896cffa28d7fe1bb5dd167cbdcb3d9fb3db01b30390ea18b987" %}
+{% set version = "2.3.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pylint-django-{{ version }}.tar.gz
+  sha256: b8dcb6006ae9fa911810aba3bec047b9410b7d528f89d5aca2506b03c9235a49
 
 build:
   number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
-  build:
-    - python >=3.5
+  host:
     - pip
-
+    - python >=3.6
   run:
-    - python >=3.5
     - django
-    - pylint-plugin-utils >=0.2.1
-    - pylint >=1.8.2
+    - pylint >=2.0
+    - pylint-plugin-utils >=0.5
+    - python >=3.6
 
 test:
   imports:
@@ -33,13 +30,18 @@ test:
     - pylint_django.augmentations
     - pylint_django.checkers
     - pylint_django.transforms
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/PyCQA/pylint-django
-  license: GPL 2
-  license_file: LICENSE
   summary: A Pylint plugin to help Pylint understand the Django web framework
+  license: GPL-2.0-only
+  license_file: LICENSE
 
 extra:
   recipe-maintainers:
+    - anthchirp
     - jakirkham
