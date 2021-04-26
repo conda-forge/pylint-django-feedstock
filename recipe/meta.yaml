@@ -1,5 +1,5 @@
 {% set name = "pylint-django" %}
-{% set version = "2.4.2" %}
+{% set version = "2.4.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pylint-django-{{ version }}.tar.gz
-  sha256: f8d77f7da47a7019cda5cb669c214f03033208f9e945094661299d2637c0da06
+  sha256: f63f717169b0c2e4e19c28f1c32c28290647330184fcb7427805ae9b6994f3fc
 
 build:
   number: 0
