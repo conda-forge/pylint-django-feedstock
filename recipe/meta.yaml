@@ -19,7 +19,6 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - django
     - pylint >=2.0
     # although the upstream package strictly only has a dependence on v0.5
     # pylint-plugin-utils, it can only run with pylint >=2.4 with v0.6
@@ -35,6 +34,7 @@ test:
   commands:
     - pip check
   requires:
+    - django
     - pip
 
 about:
@@ -47,3 +47,4 @@ extra:
   recipe-maintainers:
     - anthchirp
     - jakirkham
+    - zklaus
