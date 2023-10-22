@@ -1,30 +1,30 @@
 {% set name = "pylint-django" %}
-{% set version = "2.5.3" %}
+{% set version = "2.5.4" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pylint-django-{{ version }}.tar.gz
-  sha256: 0ac090d106c62fe33782a1d01bda1610b761bb1c9bf5035ced9d5f23a13d8591
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pylint_django-{{ version }}.tar.gz
+  sha256: d167b1437342543727925a98c0dee9c8de8e8e1f8cb8caf868018febd2c4e2b7
 
 build:
-  number: 0
   noarch: python
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
+    - python >=3.7,<4.0
+    - poetry-core >1.0.0
     - pip
-    - python >=3.6
   run:
-    - django
-    - pylint >=2.0
-    # although the upstream package strictly only has a dependence on v0.5
-    # pylint-plugin-utils, it can only run with pylint >=2.4 with v0.6
-    - pylint-plugin-utils >=0.6
-    - python >=3.6
+    - python >=3.7,<4.0
+    - pylint-plugin-utils >=0.8
+    - pylint >=2.0,<4.0
+  run_constrained:
+    - django >2.2
 
 test:
   imports:
@@ -40,7 +40,7 @@ test:
 about:
   home: https://github.com/PyCQA/pylint-django
   summary: A Pylint plugin to help Pylint understand the Django web framework
-  license: GPL-2.0-only
+  license: GPL-2.0
   license_file: LICENSE
 
 extra:
