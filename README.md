@@ -145,4 +145,5 @@ Feedstock Maintainers
 
 * [@anthchirp](https://github.com/anthchirp/)
 * [@jakirkham](https://github.com/jakirkham/)
+* [@rxm7706](https://github.com/rxm7706/)
 
