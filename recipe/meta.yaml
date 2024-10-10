@@ -36,6 +36,7 @@ test:
     - pip check
   requires:
     - pip
+    - django
 
 about:
   home: https://github.com/PyCQA/pylint-django
